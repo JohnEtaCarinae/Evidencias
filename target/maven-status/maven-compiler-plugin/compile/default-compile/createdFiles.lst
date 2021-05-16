@@ -1,0 +1,8 @@
+dao\Estudiante.class
+dao\Rol.class
+logica\OperProfesor.class
+logica\OperEstudiante.class
+utilidades\UtilidadesVarias.class
+web\inicioBean.class
+dao\Profesor.class
+database\Conexiones.class

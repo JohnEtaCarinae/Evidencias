@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+
+    <html>
+        <h:head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Prueba con Primefaces</title>
+        </h:head>
+
+        <h:body>
+            <h:form>
+                <p:panel header="Proyecto software de evidencias y notas. ">
+                    <div class ="card">
+                        <p>Este proyecto consiste en un software que permite a profesores crear clases y tareas para que
+                        los estudiantes puedan subir evidencias y que los profesores puedan calificar estas. Estas notas
+                        podrán ser vistas por los estudiantes y modificadas por los profesores si lo desean.</p>
+                    </div>             
+
+
+                        <p:commandButton value="Entrar" action="#{inicioBean.ingresar()}"/>
+                        <br/>
+                      
+
+                    </p:panel>
+                <p:panel footer="Universidad Central - Miguel Angel Vargas Pérez - Giovanny Alexander Briceño Riveros - 2021"></p:panel>
+                </h:form>
+        </h:body>
+    </html>
+</f:view>
