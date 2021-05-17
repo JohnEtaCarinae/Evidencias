@@ -2,7 +2,7 @@
 package dao;
 
 
-public class Estudiante {
+public class Usuario {
     private Long id;
     private String identificacion;
     private String nombre;

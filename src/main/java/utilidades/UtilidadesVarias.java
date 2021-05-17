@@ -5,7 +5,7 @@
  */
 package utilidades;
 
-import dao.Estudiante;
+import dao.Usuario;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -20,7 +20,7 @@ public class UtilidadesVarias {
         return sd.format(new Date());
         
     }
-    public String sumar(String sumando1, int sumando2,Estudiante c, Boolean b ){
+    public String sumar(String sumando1, int sumando2,Usuario c, Boolean b ){
         return "";
     }
     
