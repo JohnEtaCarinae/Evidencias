@@ -18,15 +18,15 @@ public class OperUsuario implements Operaciones<Usuario> {
         Connection cActiva = c.conectarse();
         if (cActiva != null){
             try {
-                String sql = "insert into usuarios (identificacion, nombre, apellido, correo, numero, contraseña, rol ) values (?,?,?,?,?,?,?)";
+                String sql = "insert into usuarios (identificacion, nombre, apellido, correo, numero, clave, ocupacion ) values (?,?,?,?,?,?,?)";
                 PreparedStatement us =  cActiva.prepareStatement(sql);
                 us.setString(1, dato.getIdentificacion());
                 us.setString(2, dato.getNombre());
                 us.setString(3, dato.getApellido());
                 us.setString(4, dato.getCorreo());
                 us.setString(5, dato.getNumero());
-                us.setString(6, dato.getContraseña());
-                us.setString(5, dato.getRol().getNombre());
+                us.setString(6, dato.getClave());
+                us.setString(7, dato.getRol().getNombre());
                 int rta = us.executeUpdate();
                 return rta;
             } catch (SQLException ex) {

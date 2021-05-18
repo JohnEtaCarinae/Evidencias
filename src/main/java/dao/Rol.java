@@ -3,8 +3,8 @@ package dao;
 
 
 public enum Rol {
-    ESTUDIANTE("Alumno"),
-    PROFESOR("Docente");
+    ESTUDIANTE("Estudiante"),
+    PROFESOR("Profesor");
     private String nombre;
 
     Rol(String nombre){

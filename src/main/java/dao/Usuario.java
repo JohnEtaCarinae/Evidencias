@@ -9,8 +9,8 @@ public class Usuario {
     private String apellido;
     private String correo;
     private String numero;
-    private String contraseña;
-    private Rol ocupacion;
+    private String clave;
+    private Rol rol;
    
     
     public Long getId() {
@@ -61,20 +61,20 @@ public class Usuario {
         this.numero = numero;
     }
     
-    public String getContraseña(){
-        return contraseña;
+    public String getClave(){
+        return clave;
     }
     
-    public void setContraseña(String contraseña){
-        this.contraseña = contraseña;
+    public void setClave(String clave){
+        this.clave = clave;
     }
     
     public Rol getRol(){
-        return ocupacion;
+        return rol;
     }
     
-    public void setRol(Rol ocupacion){
-        this.ocupacion = ocupacion;
+    public void setRol(Rol rol){
+        this.rol = rol;
     }
     
     @Override
@@ -85,8 +85,8 @@ public class Usuario {
                 this.apellido+""+
                 this.correo+""+
                 this.numero+""+
-                this.contraseña+""+
-                this.ocupacion.getNombre();
+                this.clave+""+
+                this.rol.getNombre();
     }
     
 }

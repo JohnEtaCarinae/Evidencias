@@ -16,6 +16,10 @@ import javax.faces.bean.ManagedBean;
 @SessionScoped
 public class inicioBean {
     public String ingresar(){
-        return "segundaPantalla";
+        return "InicioSesion";
+    }
+    
+    public String irRegistro(){
+        return "PantallaRegistro";
     }
 }
