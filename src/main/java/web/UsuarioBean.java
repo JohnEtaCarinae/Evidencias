@@ -1,6 +1,7 @@
 
 package web;
 import dao.Usuario;
+import dao.Clase;
 import dao.Rol;
 import database.Conexiones;
 import javax.faces.bean.ManagedBean;
@@ -89,6 +90,7 @@ public class UsuarioBean implements Serializable {
     public void setRol(Integer rol){
         this.rol = rol;
     }
+    
     
     public String getMensaje() {
         return mensaje;

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui">
+
+    <html>
+        <h:head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Pantalla de creación de tareas</title>
+        </h:head>
+
+        <h:body>
+                <h:form>
+                    <p:panel header="NUEVA TAREA">
+                            <br/>
+                        <span class="ui-float-label">
+                            <p:inputText id="titulotarea" value="#{tareaBean.tituloTarea}"/>
+                            <p:outputLabel for="@previous" value="Título de la tarea"/>
+                        </span>
+
+                        <span class="ui-float-label">
+                            <p:inputText id="descripciontarea" value="#{tareaBean.descripTarea}"/>
+                            <p:outputLabel for="@previous" value="Descripción de la tarea"/>
+                        </span>
+
+                        <h:panelGrid columns="2">
+                            <h:outputLabel value="Fecha de entrega :" />
+                            <p:calendar pattern="dd/MM/yyyy" value="#{tareaBean.fechaTarea}"/>
+                        </h:panelGrid>     
+
+                        <br/>
+                        <p:commandButton value="Crear tarea" action="#{tareaBean.crearTarea()}"/>
+                        <br/>
+                        <h:outputLabel id="msg" value="#{tareaBean.mensaje}"/>
+
+
+                    </p:panel>
+                </h:form>
+        </h:body>
+    </html>
+</f:view>

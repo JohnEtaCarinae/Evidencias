@@ -14,12 +14,20 @@ import javax.faces.bean.ManagedBean;
  */
 @ManagedBean
 @SessionScoped
-public class inicioBean {
-    public String ingresar(){
-        return "InicioSesion";
-    }
-    
+public class inicioBean { 
     public String irRegistro(){
         return "PantallaRegistro";
+    }
+    
+    public String irProfesor(){
+        return "InterfazProfesor";
+    }
+    
+    public String irCreacionClase(){
+        return "CreacionClase";
+    }
+    
+    public String irCreacionTarea(){
+        return "CrearTarea";
     }
 }

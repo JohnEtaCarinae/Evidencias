@@ -1,7 +1,10 @@
 dao\Rol.class
+dao\Clase.class
 dao\Usuario.class
 logica\Operaciones.class
 web\inicioBean.class
 web\UsuarioBean.class
 database\Conexiones.class
 logica\OperUsuario.class
+logica\OperClase.class
+web\ClaseBean.class
