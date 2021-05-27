@@ -5,6 +5,8 @@
  */
 package Pruebas;
 
+import database.Conexiones; 
+import java.sql.Connection;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -42,4 +44,12 @@ public class Pruebas {
     //
     // @Test
     // public void hello() {}
+    
+    @Test
+    public void testconexion(){
+        Conexiones c = new Conexiones();
+        Connection cActiva = c.conectarse();
+        
+        assertNotNull(cActiva);
+    }
 }
