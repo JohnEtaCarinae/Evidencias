@@ -16,17 +16,17 @@
         <h:body>
                 <h:form>
                     <p:panel header="NUEVA TAREA">
-                            <br/>
+                        <br/>
                         <span class="ui-float-label">
                             <p:inputText id="titulotarea" value="#{tareaBean.tituloTarea}"/>
                             <p:outputLabel for="@previous" value="Título de la tarea"/>
                         </span>
-
+                        <br/>    
                         <span class="ui-float-label">
                             <p:inputText id="descripciontarea" value="#{tareaBean.descripTarea}"/>
                             <p:outputLabel for="@previous" value="Descripción de la tarea"/>
                         </span>
-
+                        <br/>
                         <h:panelGrid columns="2">
                             <h:outputLabel value="Fecha de entrega :" />
                             <p:calendar pattern="dd/MM/yyyy" value="#{tareaBean.fechaTarea}"/>

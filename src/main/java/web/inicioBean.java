@@ -30,4 +30,12 @@ public class inicioBean {
     public String irCreacionTarea(){
         return "CrearTarea";
     }
+    
+    public String irEstud(){
+        return "InterfazEstudiante";
+    }
+    
+    public String irSubirTarea(){
+        return "SubidaTarea";
+    }
 }

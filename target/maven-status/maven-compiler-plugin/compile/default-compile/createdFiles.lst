@@ -1,10 +1,13 @@
-dao\Rol.class
 dao\Clase.class
 dao\Usuario.class
-logica\Operaciones.class
 web\inicioBean.class
 web\UsuarioBean.class
 database\Conexiones.class
-logica\OperUsuario.class
 logica\OperClase.class
+logica\OperTarea.class
 web\ClaseBean.class
+dao\Rol.class
+logica\Operaciones.class
+dao\Tarea.class
+web\TareaBean.class
+logica\OperUsuario.class
